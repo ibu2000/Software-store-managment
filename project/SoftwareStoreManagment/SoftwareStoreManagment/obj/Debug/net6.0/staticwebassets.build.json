@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zVC7ZTKUMv5k2BK5ur0Z7rxkLOnSiJ0l2A3DHzn9f5Q=",
+  "Hash": "zvq5EnR66KGghNyLkDoZmDx0Ae1IB+3NkXC11vWDOiM=",
   "Source": "SoftwareStoreManagment",
   "BasePath": "_content/SoftwareStoreManagment",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SoftwareStoreManagment.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "SoftwareStoreManagment",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\wwwroot\\",
+      "BasePath": "_content/SoftwareStoreManagment",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\wwwroot\\css\\site.css",
