@@ -10058,19 +10058,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ibu20\\.nuget\\packages\\": {}
+    "C:\\Users\\nanam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\University\\KURS 3\\(6)leten semestur\\TSP\\GITHUB REPOSITORY\\Software-store-managment\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\SoftwareStoreManagment.csproj",
+      "projectUniqueName": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\SoftwareStoreManagment.csproj",
       "projectName": "SoftwareStoreManagment",
-      "projectPath": "E:\\University\\KURS 3\\(6)leten semestur\\TSP\\GITHUB REPOSITORY\\Software-store-managment\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\SoftwareStoreManagment.csproj",
-      "packagesPath": "C:\\Users\\ibu20\\.nuget\\packages\\",
-      "outputPath": "E:\\University\\KURS 3\\(6)leten semestur\\TSP\\GITHUB REPOSITORY\\Software-store-managment\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\obj\\",
+      "projectPath": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\SoftwareStoreManagment.csproj",
+      "packagesPath": "C:\\Users\\nanam\\.nuget\\packages\\",
+      "outputPath": "E:\\uni\\KURS_3\\LETEN_SEMESTUR\\ТСП\\github project\\project\\SoftwareStoreManagment\\SoftwareStoreManagment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ibu20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nanam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

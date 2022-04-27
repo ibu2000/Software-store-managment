@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoftwareStoreManagment
 build_property.RootNamespace = SoftwareStoreManagment
-build_property.ProjectDir = E:\University\KURS 3\(6)leten semestur\TSP\GITHUB REPOSITORY\Software-store-managment\project\SoftwareStoreManagment\SoftwareStoreManagment\
+build_property.ProjectDir = E:\uni\KURS_3\LETEN_SEMESTUR\ТСП\github project\project\SoftwareStoreManagment\SoftwareStoreManagment\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\University\KURS 3\(6)leten semestur\TSP\GITHUB REPOSITORY\Software-store-managment\project\SoftwareStoreManagment\SoftwareStoreManagment
+build_property.MSBuildProjectDirectory = E:\uni\KURS_3\LETEN_SEMESTUR\ТСП\github project\project\SoftwareStoreManagment\SoftwareStoreManagment
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Create.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Delete.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Details.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Edit.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Index.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Home/Index.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Home/Privacy.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Create.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Delete.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Details.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Edit.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Index.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Create.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Delete.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Details.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Edit.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Index.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/Error.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_LoginPartial.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/_ViewImports.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/_ViewStart.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/University/KURS 3/(6)leten semestur/TSP/GITHUB REPOSITORY/Software-store-managment/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_Layout.cshtml]
+[E:/uni/KURS_3/LETEN_SEMESTUR/ТСП/github project/project/SoftwareStoreManagment/SoftwareStoreManagment/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2m1zjyk9b9

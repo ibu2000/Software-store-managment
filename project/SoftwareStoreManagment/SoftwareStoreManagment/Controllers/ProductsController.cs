@@ -22,9 +22,66 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string clients)
         {
-            return View(await _context.Products.ToListAsync());
+
+            if (String.IsNullOrEmpty(clients))
+            {
+                var applicationDbContext2 = _context.Products;
+                return View(await applicationDbContext2.ToListAsync());
+
+            }
+            else
+            {
+                string str = @"-?\d+(?:\.\d+)?";
+                var regex = new Regex(str, RegexOptions.IgnoreCase);
+                bool IsValidID = regex.IsMatch(clients);
+                if (IsValidID)
+                {
+                    if (clients.Length < 10)
+                    {
+                        int number;
+                        if (int.TryParse(clients, out number))
+                        {
+                            var searchByID = await _context.Products.Where(c => c.ProductId == Int32.Parse(clients)).ToListAsync();
+                            var searchByWarranty = await _context.Products.Where(c => c.Warranty == Int32.Parse(clients)).ToListAsync();
+                            if (searchByID.Any())
+                            {
+                                return View(searchByID);
+                            }
+                            else if (searchByWarranty.Any())
+                            {
+                                return View(searchByWarranty);
+                            }
+                            else return View();
+                        }
+
+
+                        var searchByPrice = await _context.Products.Where(c => c.Price == Double.Parse(clients)).ToListAsync();
+
+                        if (searchByPrice.Any())
+                        {
+                            return View(searchByPrice);
+                        }
+                        else return View();
+                    }
+                    else return View();
+                }
+
+                var searchByName = await _context.Products.Where(c => c.ProductName.Contains(clients)).ToListAsync();
+                var searchByDesc = await _context.Products.Where(c => c.Description.Contains(clients)).ToListAsync();
+               
+                if (searchByName.Any())
+                {
+                    return View(searchByName);
+                }
+                else if (searchByDesc.Any())
+                {
+                    return View(searchByDesc);
+                }
+                else
+                    return View();
+            }
         }
 
         // GET: Products/Details/5
