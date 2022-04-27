@@ -15,9 +15,39 @@
    </div>
 	</div>
 
+
+    
+
+<form asp-action="Index">  <div class="input-group md-form form-sm form-2 p1-0">
+
+        <input name="clients" class="form-control my-0 py-1 red-border" type="text" placeholder="Here are all of our clients, you can search by their ID, name, phone or email" aria-label="Search" />
+        <div class="input-group-append">
+
+            <span class="input-group-text red lightne-3" id="basic-text1">
+               <i class="bi bi-search"></i>
+            </span>
+        </div>
+    </div>
+</form> 
+
+@section scripts{
+    <script>
+       $ (function(){
+           $("#basic-text1").click(function () {
+               $("Form").submit();
+           })
+       });
+
+
+    </script>
+}
+
 <table class="table table-bordered table-striped" style="width:100%">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientId)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -31,8 +61,19 @@
         </tr>
     </thead>
     <tbody>
+
+@{if (Model == null)
+{ <table class="table table-bordered table-striped" style="width:100%">
+ 
+                </table>
+            }
+           else{
+
 @foreach (var item in Model) {
         <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.ClientId)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -49,6 +90,7 @@
             </td>
         </tr>
 }
+}}
     </tbody>
 </table>
 </div>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -57,6 +58,14 @@ namespace SoftwareStoreManagment.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductId,ProductName,Price,Description,Warranty")] Product product)
         {
+            string war = @"[0-9]+";
+            var regexWarranty = new Regex(war, RegexOptions.IgnoreCase);
+            bool isValidWarranty = regexWarranty.IsMatch(product.Warranty.ToString());
+            if (!isValidWarranty)
+            {
+
+                ModelState.AddModelError("Warranty", "Not a valid warranty period");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(product);

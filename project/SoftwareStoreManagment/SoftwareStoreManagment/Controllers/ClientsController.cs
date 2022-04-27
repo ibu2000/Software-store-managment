@@ -22,9 +22,53 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // GET: Clients
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string clients)
         {
-            return View(await _context.Clients.ToListAsync());
+            if (String.IsNullOrEmpty(clients))
+            {
+                var applicationDbContext2 = _context.Clients;
+                return View(await applicationDbContext2.ToListAsync());
+
+            }
+            else
+            {   
+                string str = @"^\d+$";
+                var regex = new Regex(str, RegexOptions.IgnoreCase);
+                bool IsValidID = regex.IsMatch(clients);
+                if (IsValidID)
+                {
+                    if (clients.Length < 10)
+                    {
+                        var searchByID = await _context.Clients.Where(c => c.ClientId == Int32.Parse(clients)).ToListAsync();
+                        var searchByPhone = await _context.Clients.Where(c => c.Phone.Contains(clients)).ToListAsync();
+                        if (searchByID.Any())
+                        {
+                            return View(searchByID);
+                        }
+                        else if (searchByPhone.Any())
+                        {
+                            return View(searchByPhone);
+                        }
+                        else return View();
+                    }
+                    else return View();
+                }
+              
+                var searchByName = await _context.Clients.Where(c => c.Name.Contains(clients)).ToListAsync();
+                var searchByEmail = await _context.Clients.Where(c => c.Email.Contains(clients)).ToListAsync();
+
+               
+                if (searchByName.Any())
+                {
+                    return View(searchByName);
+                }
+                else if (searchByEmail.Any())
+                {
+                    return View(searchByEmail);
+                }
+                else
+                return View();
+            }
         }
 
 
@@ -122,7 +166,29 @@ namespace SoftwareStoreManagment.Controllers
             {
                 return NotFound();
             }
+            const string pattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|" + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)" + @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
+            var regex = new Regex(pattern, RegexOptions.IgnoreCase);
+            bool IsValidEmail = regex.IsMatch(client.Email);
+            if (!IsValidEmail)
+            {
+                ModelState.AddModelError("Email", "Not a valid email");
+            }
+            string name = @"^[a-zA-Z]+$";
+            var regexName = new Regex(name, RegexOptions.IgnoreCase);
+            bool isValidName = regexName.IsMatch(client.Name);
+            if (!isValidName)
+            {
 
+                ModelState.AddModelError("Name", "Not a valid name");
+            }
+            string phone = @"^[08]" + "[0-9]+$";
+            var regexPhone = new Regex(phone, RegexOptions.IgnoreCase);
+            bool isValidPhone = regexPhone.IsMatch(client.Phone);
+            if (!isValidPhone || client.Phone.Length != 10)
+            {
+
+                ModelState.AddModelError("Phone", "Not a valid phone");
+            }
             if (ModelState.IsValid)
             {
                 try
