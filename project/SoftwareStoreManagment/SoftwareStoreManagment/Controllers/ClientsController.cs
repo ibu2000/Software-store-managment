@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,6 +26,8 @@ namespace SoftwareStoreManagment.Controllers
         {
             return View(await _context.Clients.ToListAsync());
         }
+
+
 
         // GET: Clients/Details/5
         public async Task<IActionResult> Details(long? id)
@@ -57,13 +60,39 @@ namespace SoftwareStoreManagment.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ClientId,Name,Phone,Email")] Client client)
         {
+
+            const string pattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|" + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)" + @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
+            var regex = new Regex(pattern, RegexOptions.IgnoreCase);
+            bool IsValidEmail = regex.IsMatch(client.Email);        
+            if(!IsValidEmail)
+            {
+                  ModelState.AddModelError("Email", "Not a valid email");
+            }
+            string name = @"^[a-zA-Z]+$";
+            var regexName = new Regex(name, RegexOptions.IgnoreCase);
+            bool isValidName = regexName.IsMatch(client.Name);
+            if (!isValidName)
+            {
+
+                ModelState.AddModelError("Name", "Not a valid name");
+            }
+            string phone = @"^[08]"+"[0-9]+$";
+            var regexPhone = new Regex(phone, RegexOptions.IgnoreCase);
+            bool isValidPhone = regexPhone.IsMatch(client.Phone);
+            if (!isValidPhone || client.Phone.Length != 10)
+            {
+
+                ModelState.AddModelError("Phone", "Not a valid phone");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(client);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(client);
+
         }
 
         // GET: Clients/Edit/5

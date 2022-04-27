@@ -11,6 +11,7 @@ namespace SoftwareStoreManagment.Models
         public string Name { get; set; }
         [Required]
         public string Phone { get; set; }
+        [EmailAddress]
         [Required]
         public string Email { get; set; }
 
