@@ -132,6 +132,7 @@ namespace SoftwareStoreManagment.Controllers
                 await _context.SaveChangesAsync();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction(nameof(Index));
+
             }
             return View(product);
         }
@@ -184,9 +185,10 @@ namespace SoftwareStoreManagment.Controllers
                         throw;
                     }
                 }
+                TempData["success"] = "Product edited successfully";
                 return RedirectToAction(nameof(Index));
             }
-            TempData["success"] = "Product edited successfully";
+            
             return View(product);
         }
 

@@ -150,10 +150,8 @@ namespace SoftwareStoreManagment.Controllers
             {
                 return NotFound();
             }
-            order = await _context.Orders.FindAsync(id);
-            var product = _context.Products.Find(order.ProductId);
-             var client = _context.Clients.Find(order.ClientId);
-            if (ModelState.IsValid)  
+         
+            if (ModelState.ErrorCount == 2)  
             {
                 try
                 {  
@@ -171,13 +169,14 @@ namespace SoftwareStoreManagment.Controllers
                         throw;
                     }
                 }
+                TempData["success"] = "Order edited successfully";
                 return RedirectToAction(nameof(Index));
 
             }
           
             ViewData["ClientId"] = new SelectList(_context.Clients, "ClientId", "Name", order.Client.Name);
             ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductName", order.Product.ProductName);
-            TempData["success"] = "Order edited successfully";
+            TempData["error"] = "Order not edited";
             return View(order);
         }
 
@@ -222,7 +221,9 @@ namespace SoftwareStoreManagment.Controllers
                     TempData["success"] = "Order returned successfully";
                     return RedirectToAction(nameof(Index));
                 }
-                else { return RedirectToAction(nameof(Index)); }
+                else {
+                    TempData["success"] = "Order cannot be returned outside of waranty period";
+                    return RedirectToAction(nameof(Index)); }
             }
             else { return RedirectToAction(nameof(Index)); }
         }

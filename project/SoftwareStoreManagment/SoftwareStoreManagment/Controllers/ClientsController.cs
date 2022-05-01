@@ -137,8 +137,8 @@ namespace SoftwareStoreManagment.Controllers
             {
                 _context.Add(client);
                 await _context.SaveChangesAsync();
-                TempData["success"] = "Client created successfully";
-                return RedirectToAction(nameof(Index));
+               TempData["success"] = "Client created successfully";
+                return RedirectToAction(nameof(Index)); 
             }
 
             return View(client);
