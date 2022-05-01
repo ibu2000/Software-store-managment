@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -103,6 +104,7 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // GET: Products/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -113,6 +115,7 @@ namespace SoftwareStoreManagment.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("ProductId,ProductName,Price,Description,Warranty")] Product product)
         {
             string war = @"[0-9]+";
@@ -127,12 +130,14 @@ namespace SoftwareStoreManagment.Controllers
             {
                 _context.Add(product);
                 await _context.SaveChangesAsync();
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(product);
         }
 
         // GET: Products/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
@@ -153,6 +158,7 @@ namespace SoftwareStoreManagment.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(long id, [Bind("ProductId,ProductName,Price,Description,Warranty")] Product product)
         {
             if (id != product.ProductId)
@@ -180,10 +186,12 @@ namespace SoftwareStoreManagment.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            TempData["success"] = "Product edited successfully";
             return View(product);
         }
 
         // GET: Products/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
@@ -202,6 +210,7 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // POST: Products/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(long id)
@@ -209,6 +218,7 @@ namespace SoftwareStoreManagment.Controllers
             var product = await _context.Products.FindAsync(id);
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
+            TempData["success"] = "Product deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 

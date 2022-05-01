@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // GET: Clients
+        [Authorize]
         public async Task<IActionResult> Index(string clients)
         {
             if (String.IsNullOrEmpty(clients))
@@ -92,9 +94,11 @@ namespace SoftwareStoreManagment.Controllers
         }
 
         // GET: Clients/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
+
         }
 
         // POST: Clients/Create
@@ -102,6 +106,7 @@ namespace SoftwareStoreManagment.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("ClientId,Name,Phone,Email")] Client client)
         {
 
@@ -132,6 +137,7 @@ namespace SoftwareStoreManagment.Controllers
             {
                 _context.Add(client);
                 await _context.SaveChangesAsync();
+                TempData["success"] = "Client created successfully";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -207,6 +213,7 @@ namespace SoftwareStoreManagment.Controllers
                         throw;
                     }
                 }
+                TempData["success"] = "Client updated successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(client);
@@ -238,6 +245,7 @@ namespace SoftwareStoreManagment.Controllers
             var client = await _context.Clients.FindAsync(id);
             _context.Clients.Remove(client);
             await _context.SaveChangesAsync();
+            TempData["success"] = "Client deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 
